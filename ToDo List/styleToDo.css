@@ -1,0 +1,132 @@
+
+body{
+    background-color: #34495e;
+}
+#main
+{
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+    height: 800px;
+    overflow-y: auto;
+    color: black;
+    border: 10px solid #01a3a4;
+    border-radius: 10px;
+}
+#main h1
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-style: oblique;
+}
+#main ul
+{
+    margin-top: 50px;
+    padding-left: 0px;
+}
+#main ul li
+{
+    list-style: none;
+    border: 2px solid #b5c5dd;
+    width: 80%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    height: 40px;
+    margin: 5px auto;
+    text-align: left; 
+}
+#main ul li label
+{
+    margin: 0 auto;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 40px;
+    font-size: 18px;
+}
+#main ul li #check
+{
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    -webkit-appearance: none;
+    border: 2px solid #b5c5dd;
+    position: relative;
+    outline: 0;
+}
+#main ul li #check:checked:after
+{
+    content: '\2714';
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    left: 7px;
+    color: black;
+}
+#main ul li input[type="checkbox"]:checked+label
+{
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, .3);
+}
+#main .controls
+{
+    width: 60%;
+    margin: auto;
+}
+#main .controls #input
+{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 2px solid #b5c5dd;
+    border-radius: 10px;
+    background-origin: ;
+}
+#main .controls #input:focus
+{
+    outline: 0;
+}
+#main .controls button
+{
+    width: 100%;
+    background: #fff;
+    border: none;
+    height: 30px;
+    margin-top: 2px;
+    cursor: pointer;
+    color: #fff;
+}
+#main .controls button:focus
+{
+    outline: 0;
+}
+#main .controls button:hover
+{
+    transform: scalex(1.05);
+}
+#main .controls #add 
+{
+    background-color: #2980b9;
+    border-radius: 10PX;
+}
+#main .controls #remove
+{
+    background-color: #c0392b;
+    border-radius: 10px;
+}
+#main .mycheck
+{
+    opacity: 1;
+    border-radius: 10px;
+}
+.visual
+{
+    opacity: 1 !important;
+    border-radius: 10px;
+}
